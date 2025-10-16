@@ -1,0 +1,13 @@
+# Maven target klasörü
+target/
+
+# IDE dosyaları
+*.iml
+.idea/
+
+# Log dosyaları
+*.log
+
+# Lokal veritabanı dosyaları
+*.db
+
