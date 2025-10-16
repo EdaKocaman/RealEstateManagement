@@ -148,9 +148,6 @@ public class PropertySearchServiceImpl implements PropertySearchService {
         Specification<Property> spec = (Root<Property> root, CriteriaQuery<?> query, CriteriaBuilder cb) -> {
             List<Predicate> predicates = new ArrayList<>();
 
-            if (dto.getCustomerId() != null) {
-                predicates.add(cb.equal(root.get("customer").get("customerId"), dto.getCustomerId()));
-            }
             
             // Property Type filtresi
             if (dto.getPropertyType() != null && !dto.getPropertyType().isEmpty()) {

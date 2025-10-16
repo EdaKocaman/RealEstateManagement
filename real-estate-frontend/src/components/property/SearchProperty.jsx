@@ -45,7 +45,6 @@
             roomCount: formData.roomCount || null,
             heatingType: formData.heatingType || null,
             status: formData.status || null,
-            customerId: formData.customerId || null
           };
       
           const res = await fetch(PROPERTIES_URL, {
